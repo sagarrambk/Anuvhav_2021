@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<data>
+    <empStr>
+        <empId>500</empId>
+        <empName>Jessica</empName>
+        <salary>9500</salary>
+        <currency>USD</currency>
+        <sherlock>false</sherlock>
+    </empStr>
+    <empTab>
+        <row>
+            <empId>800</empId>
+            <empName>John Snow</empName>
+            <salary>9500</salary>
+            <currency>USD</currency>
+            <smoker>false</smoker>
+            <mStat>Single</mStat>
+            <gender>https://assets.stickpng.com/images/585e4bd7cb11b227491c3397.png</gender>
+            <rating>3</rating>
+        </row>
+        <row>
+            <empId>801</empId>
+            <empName>Delerius</empName>
+            <salary>10500</salary>
+            <currency>USD</currency>
+            <smoker>true</smoker>
+            <mStat>Married</mStat>
+            <gender>https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png</gender>
+            <rating>4</rating>
+        </row>
+        <row>
+            <empId>802</empId>
+            <empName>Ned Stark</empName>
+            <salary>4450</salary>
+            <currency>EUR</currency>
+            <smoker>true</smoker>
+            <mStat>Married</mStat>
+            <gender>https://assets.stickpng.com/images/585e4bd7cb11b227491c3397.png</gender>
+            <rating>3</rating>
+        </row>
+        <row>
+            <empId>803</empId>
+            <empName>Aliya</empName>
+            <salary>5555</salary>
+            <currency>JPY</currency>
+            <smoker>false</smoker>
+            <mStat>Single</mStat>
+            <gender>https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png</gender>
+            <rating>4</rating>
+        </row>
+        <row>
+            <empId>804</empId>
+            <empName>Tirian</empName>
+            <salary>7889</salary>
+            <currency>AED</currency>
+            <smoker>true</smoker>
+            <mStat>Single</mStat>
+            <gender>https://assets.stickpng.com/images/585e4bd7cb11b227491c3397.png</gender>
+            <rating>5</rating>
+        </row>
+    </empTab>
+</data>

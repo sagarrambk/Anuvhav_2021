@@ -1,0 +1,62 @@
+{
+    "empStr": {
+        "empId": 999,
+        "empName": "Bilal Ahemad",
+        "salary": 15800,
+        "currency": "USD",
+        "sherlock": true
+    },
+    "empTab": [
+        {
+            "empId": 900,
+            "empName": "Rebbecca",
+            "salary": 1400,
+            "currency": "EUR",
+            "smoker": false,
+            "gender": "female",
+            "mStat": "Single",
+            "rating": 5
+        },
+        {
+            "empId": 901,
+            "empName": "Syed Bin",
+            "salary": 3690,
+            "currency": "AED",
+            "smoker": true,
+            "gender": "male",
+            "mStat": "Single",
+            "rating": 4
+        },
+        {
+            "empId": 902,
+            "empName": "Razia",
+            "salary": 5580,
+            "currency": "USD",
+            "smoker": false,
+            "gender": "female",
+            "mStat": "Married",
+            "rating": 3
+        },
+        {
+            "empId": 903,
+            "empName": "Mathias",
+            "salary": 5580,
+            "currency": "EUR",
+            "smoker": true,
+            "gender": "male",
+            "mStat": "Married",
+            "rating": 3
+        },
+        {
+            "empId": 904,
+            "empName": "Stefeny",
+            "salary": 8860,
+            "currency": "USD",
+            "smoker": false,
+            "gender": "female",
+            "mStat": "Married",
+            "rating": 3
+        }
+
+    ]
+}

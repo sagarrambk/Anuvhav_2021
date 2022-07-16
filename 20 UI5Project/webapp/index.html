@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <!--Bootstraping - process of loading something library or framework
+            like jQuery which browser dont understand directly-->
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_bluecrystal"
+                data-sap-ui-xx-bindingSyntax="complex"
+                data-sap-ui-resourceroots='
+                    {"ibm.fin.ar": "./"}
+                '></script>  
+                
+        <script>  
+            var oView = new sap.ui.view({
+                viewName: "ibm.fin.ar.view.Main",
+                type: "XML"
+            });
+            oView.placeAt("content");
+        </script>
+    </head>
+    <body>
+        <div id="content" />
+    </body>
+</html>
