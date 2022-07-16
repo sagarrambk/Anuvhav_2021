@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.Supplier">
+    <Page>
+        <content>
+            <Text text="Load supplier data here" />
+        </content>
+    </Page>
+</mvc:View>
