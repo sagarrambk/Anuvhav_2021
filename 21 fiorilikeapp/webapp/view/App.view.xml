@@ -1,0 +1,3 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.App">
+    <Text text="Main aa gaya- mera naame hai App View = I am the root view" />
+</mvc:View>

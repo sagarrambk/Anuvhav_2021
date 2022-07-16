@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.View1">
+    <Page title="View 1">
+        <headerContent>
+            <Button icon="sap-icon://action" press="onNext" />
+        </headerContent>
+        <Button text="go to next" press="onNext" id="myBtn"/>
+        <Text text="{local>/demo}" />
+    </Page>
+</mvc:View>
