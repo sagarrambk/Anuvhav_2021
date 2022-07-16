@@ -1,0 +1,100 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZJAN_2021_SRV" xml:lang="en" sap:schema-version="1">
+            <EntityType Name="Supplier" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="BP_ID"/>
+                </Key>
+                <Property Name="BP_ID" Type="Edm.String" Nullable="false" sap:unicode="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BP_ROLE" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="EMAIL_ADDRESS" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="COMPANY_NAME" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false"/>
+                <Property Name="CURRENCY_CODE" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CITY" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="STREET" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="BUILDING" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="COUNTRY" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="OrderItem" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="SoId"/>
+                    <PropertyRef Name="SoItemPos"/>
+                </Key>
+                <Property Name="SoId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Sales Order ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SoItemPos" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Item Position" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ProductId" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Product ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Currency Code" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false" sap:semantics="currency-code"/>
+                <Property Name="GrossAmount" Type="Edm.Decimal" Nullable="false" Precision="16" Scale="3" sap:unicode="false" sap:unit="CurrencyCode" sap:label="Gross Amount" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaxAmount" Type="Edm.Decimal" Nullable="false" Precision="16" Scale="3" sap:unicode="false" sap:unit="CurrencyCode" sap:label="Tax Amount" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TaxAmountExt" Type="Edm.Decimal" Nullable="false" Precision="23" Scale="4" sap:unicode="false" sap:label="Amount" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DeliveryDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Time Stamp" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Product" m:HasStream="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                </Key>
+                <Property Name="PRODUCT_ID" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TYPE_CODE" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CATEGORY" Type="Edm.String" sap:unicode="false" sap:sortable="false"/>
+                <Property Name="NAME" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DESCRIPTION" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SUPPLIER_ID" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="SUPPLIER_NAME" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="TAX_TARIF_CODE" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PRICE" Type="Edm.Decimal" Precision="10" Scale="2" sap:unicode="false" sap:unit="CURRENCY_CODE" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CURRENCY_CODE" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DIM_UNIT" Type="Edm.String" Nullable="false" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="PRODUCT_PIC_URL" Type="Edm.String" sap:unicode="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="MIME_TYPE" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="To_Supplier" Relationship="ZJAN_2021_SRV.Asso_Product_Supplier" FromRole="FromRole_Asso_Product_Supplier" ToRole="ToRole_Asso_Product_Supplier"/>
+                <NavigationProperty Name="To_Order" Relationship="ZJAN_2021_SRV.Asso_Product_Order" FromRole="FromRole_Asso_Product_Order" ToRole="ToRole_Asso_Product_Order"/>
+            </EntityType>
+            <Association Name="Asso_Product_Order" sap:content-version="1">
+                <End Type="ZJAN_2021_SRV.Product" Multiplicity="1" Role="FromRole_Asso_Product_Order"/>
+                <End Type="ZJAN_2021_SRV.OrderItem" Multiplicity="*" Role="ToRole_Asso_Product_Order"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Asso_Product_Order">
+                        <PropertyRef Name="PRODUCT_ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Asso_Product_Order">
+                        <PropertyRef Name="SoId"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Asso_Product_Supplier" sap:content-version="1">
+                <End Type="ZJAN_2021_SRV.Product" Multiplicity="1" Role="FromRole_Asso_Product_Supplier"/>
+                <End Type="ZJAN_2021_SRV.Supplier" Multiplicity="1" Role="ToRole_Asso_Product_Supplier"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Asso_Product_Supplier">
+                        <PropertyRef Name="PRODUCT_ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Asso_Product_Supplier">
+                        <PropertyRef Name="BP_ID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="ZJAN_2021_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="SupplierSet" EntityType="ZJAN_2021_SRV.Supplier" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="OrderItemSet" EntityType="ZJAN_2021_SRV.OrderItem" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+                <EntitySet Name="ProductSet" EntityType="ZJAN_2021_SRV.Product" sap:searchable="true" sap:addressable="false" sap:content-version="1"/>
+                <AssociationSet Name="Asso_Product_SupplierSet" Association="ZJAN_2021_SRV.Asso_Product_Supplier" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="ProductSet" Role="FromRole_Asso_Product_Supplier"/>
+                    <End EntitySet="SupplierSet" Role="ToRole_Asso_Product_Supplier"/>
+                </AssociationSet>
+                <AssociationSet Name="Asso_Product_OrderSet" Association="ZJAN_2021_SRV.Asso_Product_Order" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="ProductSet" Role="FromRole_Asso_Product_Order"/>
+                    <End EntitySet="OrderItemSet" Role="ToRole_Asso_Product_Order"/>
+                </AssociationSet>
+                <FunctionImport Name="GetMostExpensiveProduct" ReturnType="ZJAN_2021_SRV.Product" EntitySet="ProductSet" m:HttpMethod="GET"/>
+            </EntityContainer>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZJAN_2021_SRV/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZJAN_2021_SRV/$metadata"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>

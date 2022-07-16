@@ -1,0 +1,57 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+          xmlns:l="sap.ui.layout"
+          controllerName="anubhav.app.controller.Add">
+    <Page>
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <f:SimpleForm id="SimpleFormChange354"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Address"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false" >
+                    <f:content>
+                        <Label text="ProductId" />
+                        <Input id="name" value="{local>/newProduct/PRODUCT_ID}" showValueHelp="true" valueHelpRequest="onProductVH"/>
+                        <Button icon="sap-icon://iphone" tooltip="load Most Expensive product" press="onLoadExp" />
+                        <Label text="Name" />
+                        <Input value="{local>/newProduct/NAME}">
+                        </Input>
+                        <Input value="{local>/newProduct/DESCRIPTION}">
+                            <layoutData>
+                                <l:GridData span="XL1 L2 M2 S4" />
+                            </layoutData>
+                        </Input>
+                        <Label text="Price" />
+                        <Input id="idPrice" value="{local>/newProduct/PRICE}">
+                            <layoutData>
+                                <l:GridData span="XL1 L2 M2 S4" />
+                            </layoutData>
+                        </Input>
+                        <Input value="{local>/newProduct/CURRENCY_CODE}" />
+                        <Label text="Supplier Id" />
+                        <Input value="{local>/newProduct/SUPPLIER_ID}" />
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button text="Delete" icon="sap-icon://delete" press="onDelete" />
+                <Button text="Save" icon="sap-icon://save" press="onSave" />
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

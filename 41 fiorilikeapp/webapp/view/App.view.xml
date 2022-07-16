@@ -1,0 +1,7 @@
+<mvc:View xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.App">
+    <!-- <Text text="Main aa gaya- mera naame hai App View = I am the root view" /> -->
+    <!-- <App id="idSpidy">
+    </App> -->
+    <SplitApp id="idSpidy"></SplitApp>
+    <!-- <f:FlexibleColumnLayout id="idSpidy"></f:FlexibleColumnLayout> -->
+</mvc:View>

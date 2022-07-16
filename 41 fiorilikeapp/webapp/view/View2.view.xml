@@ -1,0 +1,34 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"  xmlns:core="sap.ui.core"
+            xmlns:f="sap.ui.layout.form" controllerName="anubhav.app.controller.View2">
+    <Page title="{local>name}" showNavButton="true" navButtonPress="onBack">
+        <!-- <Button text="Back" press="onBack"/>
+        <Button text="Check" id="zkas" /> -->
+        <ObjectHeader title="{PRODUCT_ID}" intro="{CATEGORY}"
+                      number="{PRICE}" numberUnit="{CURRENCY_CODE}"
+                      >
+        	<attributes>
+        		<ObjectAttribute text="{NAME}"></ObjectAttribute>
+        	</attributes>
+        </ObjectHeader>
+        <IconTabBar>
+            <items>
+                <IconTabFilter text="{i18n>XTIT_MOREDETAILS}" icon="sap-icon://warning">
+                    <core:Fragment fragmentName="anubhav.app.fragments.additionalData" type="XML" />
+                </IconTabFilter>
+                <IconTabFilter text="Suppliers" icon="sap-icon://supplier">
+                    <core:Fragment fragmentName="anubhav.app.fragments.supplier" type="XML" />
+                </IconTabFilter>
+                <IconTabFilter text="Cities" icon="sap-icon://home">
+                    <core:Fragment fragmentName="anubhav.app.fragments.cities" type="XML" />
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+        <footer>
+            <Toolbar>
+            <ToolbarSpacer></ToolbarSpacer>
+            <Button text="Save" icon="sap-icon://save" press="onSave" />
+            
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

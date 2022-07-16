@@ -1,0 +1,49 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.View1">
+    <Page title="View 1">
+        <headerContent>
+            <Button icon="sap-icon://action" press="onNext" />
+        </headerContent>
+        <!-- <Button text="go to next" press="onNext" id="myBtn"/>
+        <Text text="{local>/demo}" /> -->
+        <SearchField id="idSearch" search="onSearch"/>
+        <!-- , sorter: { path : 'type' , group: true }} -->
+        <List id="idList" items="{path : '/ProductSet'}" selectionChange="onItemPress" 
+              mode="SingleSelectMaster" delete="onDelete" growing="true" growingThreshold="5" >
+            <items>
+                <ObjectListItem title="{PRODUCT_ID}" intro="{CATEGORY}" icon="{local>imageURL}"
+                                number="{NAME}" numberUnit="{PRICE} {CURRENCY_CODE}">
+                    <firstStatus>
+                        <ObjectStatus text="{SUPPLIER_NAME}" state="Success">
+                        </ObjectStatus>
+                    </firstStatus>
+                </ObjectListItem>
+
+
+                <!-- <DisplayListItem value="Apple" label="Best Anitibiotic"></DisplayListItem>
+                <StandardListItem icon="https://i.ndtvimg.com/mt/cooks/2014-11/pineapple-annanas.jpg" description="Rich in Viteman C, for healthy Skin" title="Pineapple"></StandardListItem>
+                <InputListItem>
+                    <HBox>
+                        <Text class="sapUiTinyMarginTop" text="Which Fruit do you like" />
+                        <Input width="5rem"/>
+                    </HBox>
+                </InputListItem>
+                <CustomListItem>
+                    <Label text="Do you like fresh fruits"  />
+                    <Switch></Switch>
+                </CustomListItem>
+                <ObjectListItem icon="https://img1.mashed.com/img/gallery/heres-what-happens-when-you-eat-a-banana-every-day/intro-1596497583.jpg"
+                title="Banana" intro="Rich in potasium, Best Energy food for workout" number="70" numberUnit="per Pc."></ObjectListItem>
+                <FeedListItem sender="Jeo Biden" text="Hey! Anubhav" timestamp="New Year 2021"
+                              icon="https://www.marketplace.org/wp-content/uploads/2020/11/Joe-Biden.jpg?w=600"></FeedListItem>
+                <ActionListItem text="Order Now!!" press="onOrder"></ActionListItem> -->
+            </items>
+        </List>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button text="Add" icon="sap-icon://add"  press="onAdd" />
+                <Button text="Show Me" type="Accept" press="onShowSelItems" />
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

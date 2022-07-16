@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <!--Bootstraping - process of loading something library or framework
+            like jQuery which browser dont understand directly-->
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-xx-bindingSyntax="complex"
+                data-sap-ui-resourceroots='
+                    {"anubhav.app": "./"}
+                '></script>  
+                
+        <script>  
+
+            //To test component.js we need a ComponentContainer Object which tests our Component.js
+            var oCompContainer = new sap.ui.core.ComponentContainer({
+                name: "anubhav.app"
+            });
+
+            oCompContainer.placeAt("content");
+            
+            // oView.placeAt("content");
+        </script>
+    </head>
+    <body>
+        <div id="content" />
+    </body>
+</html>
