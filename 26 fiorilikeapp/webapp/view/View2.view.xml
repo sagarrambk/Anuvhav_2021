@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.View2">
+    <Page title="{local>name}" showNavButton="true" navButtonPress="onBack">
+        <!-- <Button text="Back" press="onBack"/>
+        <Button text="Check" id="zkas" /> -->
+        <ObjectHeader title="{local>name}" intro="{local>healthBenefit}"
+                      number="{local>price}" numberUnit="{local>currency}"
+                      icon="{local>imageURL}">   </ObjectHeader>
+    </Page>
+</mvc:View>

@@ -1,0 +1,34 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+            xmlns:f="sap.ui.layout.form" controllerName="anubhav.app.controller.View2">
+    <Page title="{local>name}" showNavButton="true" navButtonPress="onBack">
+        <!-- <Button text="Back" press="onBack"/>
+        <Button text="Check" id="zkas" /> -->
+        <ObjectHeader title="{local>name}" intro="{local>healthBenefit}"
+                      number="{local>price}" numberUnit="{local>currency}"
+                      icon="{local>imageURL}">   </ObjectHeader>
+        <IconTabBar>
+            <items>
+                <IconTabFilter text="More Details" icon="sap-icon://warning">
+                    <f:SimpleForm>
+                        <f:content>
+                            <Label text="Name" />
+                            <Text  text="{local>name}" />
+                            <Label text="Type" />
+                            <Text  text="{local>type}" />
+                            <Label text="Price" />
+                            <Text  text="{local>price} {local>currency}" />
+                            <Label text="Color" />
+                            <Text  text="{local>color}" />
+                        </f:content>
+                    </f:SimpleForm>
+                </IconTabFilter>
+                <IconTabFilter text="Suppliers" icon="sap-icon://supplier">
+                    <Text text="Exercise 2: Design an SAP.M.Table with columns and supplier data" />
+                </IconTabFilter>
+                <IconTabFilter text="Cities" icon="sap-icon://home">
+                    <Text text="This page is under construction..." />
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

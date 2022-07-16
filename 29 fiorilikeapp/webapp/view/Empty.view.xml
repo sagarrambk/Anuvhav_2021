@@ -1,0 +1,7 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="anubhav.app.controller.Empty">
+    <Page>
+        <content>
+            <Image width="100%" height="100%" src="https://image-cdn.essentiallysports.com/wp-content/uploads/20200730021113/Untitled-design-21.jpg" />
+        </content>
+    </Page>
+</mvc:View>
