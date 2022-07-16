@@ -1,0 +1,62 @@
+{
+    "empStr": {
+        "empId": 100,
+        "empName": "Ananya",
+        "salary": 9500,
+        "currency": "EUR",
+        "sherlock": false
+    },
+    "empTab": [
+        {
+            "empId": 101,
+            "empName": "Sonal",
+            "salary": 9800,
+            "currency": "EUR",
+            "smoker": false,
+            "gender": "https://cdn.iconscout.com/icon/free/png-512/woman-1285-879839.png",
+            "mStat": "S",
+            "rating": 5
+        },
+        {
+            "empId": 102,
+            "empName": "Ajay",
+            "salary": 7800,
+            "currency": "EUR",
+            "smoker": false,
+            "gender": "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-1-avatar-2754574_120513.png",
+            "mStat": "S",
+            "rating": 4
+        },
+        {
+            "empId": 103,
+            "empName": "Tania",
+            "salary": 8800,
+            "currency": "USD",
+            "smoker": true,
+            "gender": "https://cdn.iconscout.com/icon/free/png-512/woman-1285-879839.png",
+            "mStat": "S",
+            "rating": 3
+        },
+        {
+            "empId": 104,
+            "empName": "Srinivas",
+            "salary": 7600,
+            "currency": "USD",
+            "smoker": true,
+            "gender": "https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-1-avatar-2754574_120513.png",
+            "mStat": "M",
+            "rating": 4
+        },
+        {
+            "empId": 105,
+            "empName": "Sonia",
+            "salary": 1700,
+            "currency": "AED",
+            "smoker": false,
+            "gender": "https://cdn.iconscout.com/icon/free/png-512/woman-1285-879839.png",
+            "mStat": "M",
+            "rating": 3
+        }
+
+    ]
+}

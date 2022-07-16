@@ -1,0 +1,62 @@
+{
+    "empStr": {
+        "empId": 100,
+        "empName": "Ananya",
+        "salary": 9500,
+        "currency": "EUR",
+        "sherlock": false
+    },
+    "empTab": [
+        {
+            "empId": 101,
+            "empName": "Sonal",
+            "salary": 9800,
+            "currency": "EUR",
+            "smoker": false,
+            "gender": "female",
+            "mStat": "Single",
+            "rating": 5
+        },
+        {
+            "empId": 102,
+            "empName": "Ajay",
+            "salary": 7800,
+            "currency": "EUR",
+            "smoker": false,
+            "gender": "male",
+            "mStat": "Single",
+            "rating": 4
+        },
+        {
+            "empId": 103,
+            "empName": "Tania",
+            "salary": 8800,
+            "currency": "USD",
+            "smoker": true,
+            "gender": "female",
+            "mStat": "Single",
+            "rating": 3
+        },
+        {
+            "empId": 104,
+            "empName": "Srinivas",
+            "salary": 7600,
+            "currency": "USD",
+            "smoker": true,
+            "gender": "male",
+            "mStat": "Married",
+            "rating": 4
+        },
+        {
+            "empId": 105,
+            "empName": "Sonia",
+            "salary": 1700,
+            "currency": "AED",
+            "smoker": false,
+            "gender": "female",
+            "mStat": "Married",
+            "rating": 3
+        }
+
+    ]
+}

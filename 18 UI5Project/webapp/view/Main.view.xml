@@ -1,0 +1,67 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+          xmlns:t="sap.ui.table" xmlns:f="sap.ui.layout.form" controllerName="ibm.fin.ar.controller.Main">
+    <t:Table rows="{/empTab}" selectionMode="Single" visibleRowCount="5" rowSelectionChange="onRowSelect">
+        <t:columns>
+            <t:Column label="Emp No">
+                <t:template>
+                    <Text text="{empId}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Emp Name">
+                <t:template>
+                    <Input value="{empName}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Salary">
+                <t:template>
+                    <Text text="{salary} {currency}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Smoker">
+                <t:template>
+                    <CheckBox selected="{smoker}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Gender">
+                <t:template>
+                    <Image width="30px" height="30px" src="{gender}" />
+                </t:template>
+            </t:Column>
+            <t:Column label="Marital Status">
+                <t:template>
+                    <Select selectedKey="{mStat}">
+                        <items>
+                            <core:Item key="M" text="Married" />
+                            <core:Item key="S" text="Single" />
+                        </items>
+                    </Select>
+                </t:template>
+            </t:Column>
+            <t:Column label="Rating">
+                <t:template>
+                    <RatingIndicator value="{rating}" />
+                </t:template>
+            </t:Column>
+
+        </t:columns>
+    </t:Table>
+    <f:SimpleForm editable="true" id="idNew">
+        <f:title>
+            <core:Title text="Employee Details" />
+        </f:title>
+        <f:content>
+            <Label text="Emp ID" />
+            <Input value="{empId}" id="idEmpId" enabled="{iron>/empStr/sherlock}"/>
+            <Label text="Emp Name" />
+            <Input value="{ path: 'empName' }" id="idEmpName" enabled="{iron>/empStr/sherlock}"/>
+            <Label text="Salary" />
+            <Input id="idSalary" value="{= ${empName} === 'Anubhav' ? 5000 : ${salary} }" enabled="{iron>/empStr/sherlock}"/>
+            <Label text="Currency" />
+            <Input id="idCurrency" value="{currency}" enabled="{iron>/empStr/sherlock}"/>
+            <Label />
+            <Button text="Click Me" id="idBtn" press="onMagic"/>
+            <Switch id="idSwitch" change="onChange" />
+        </f:content>
+    </f:SimpleForm>
+    
+</mvc:View>

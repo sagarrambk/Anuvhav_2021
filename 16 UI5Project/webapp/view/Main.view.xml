@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+           xmlns:f="sap.ui.layout.form" controllerName="ibm.fin.ar.controller.Main">
+    <f:SimpleForm editable="true" id="idNew">
+        <f:title>
+            <core:Title text="Employee Details" />
+        </f:title>
+        <f:content>
+            <Label text="Emp ID" />
+            <Input value="{/empStr/empId}" id="idEmpId" enabled="{iron>/empStr/sherlock}"/>
+            <Label text="Emp Name" />
+            <Input value="{ path: '/empStr/empName' }" id="idEmpName" enabled="{iron>/empStr/sherlock}"/>
+            <Label text="Salary" />
+            <Input id="idSalary" enabled="{iron>/empStr/sherlock}"/>
+            <Label text="Currency" />
+            <Input id="idCurrency" enabled="{iron>/empStr/sherlock}"/>
+            <Label />
+            <Button text="Click Me" id="idBtn" press="onMagic"/>
+        </f:content>
+    </f:SimpleForm>
+</mvc:View>
