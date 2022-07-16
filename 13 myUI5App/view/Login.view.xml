@@ -1,0 +1,11 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+            controllerName="tom.controller.Login">
+    <f:SimpleForm>
+        <Label text="User Name" />
+        <Input id="idUser" width="40%"/>
+        <Label text="Password" />
+        <Input type="Password" id="idPassword" width="40%"/>
+        <Label />
+        <Button text="Login" press="onLogin" width="40%" type="Accept"/>
+    </f:SimpleForm>
+</core:View>            

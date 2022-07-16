@@ -1,0 +1,93 @@
+<html>
+    <head>  
+        <link href="css/mystyle.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function onMagic(){
+                $(".box-title").css("background-color","black")
+                               .css("color","white")
+                               .css("font-weight", "bold")
+                               .css("font-family","cursive");
+            }
+            function onHide(){
+                //$(".box").hide();
+                $(".box").fadeOut(5000, myCallBack()); 
+            }
+            function myCallBack(){
+                alert("fadeout is complete now");
+            }
+            function onShow(){
+                //$(".box").show();
+                $(".box").fadeIn(5000);
+            } 
+            function onAnimate(){
+                $("#myFile").hover(
+                    function(){
+                        $("#myFile").animate({
+                            width: '+=40px',
+                            height: '+=40px',
+                        });
+                    }
+                );
+            }
+            function onDance(){
+                $("#myFile").animate({
+                    width: "50px",
+                    height: "50px"
+                }, function(){
+                    $(this).animate({
+                        width: "200px",
+                        height: "200px"
+                    }, function(){
+                        onDance();
+                    })
+                });
+            }
+
+        </script>
+
+    </head>
+    <body>
+        
+        <div class="box">
+         <div class="box-title">
+            <h2>What is HTML</h2>
+         </div>
+         <div class="box-content">
+            <p>HTML stands for<b><em>Hyper Text Markup Language</em></b>, it is used to design
+               static web content
+            </p>
+         </div>
+      </div>
+      <div class="box">
+         <div class="box-title">
+            <h2>What is CSS</h2>
+         </div>
+         <div class="box-content">
+            <p>CSS stands for Cascading Style Sheets, It is used to style/beautify 
+               our content
+            </p>
+         </div>
+      </div>
+      <div class="box">
+         <div class="box-title">
+            <h2>What is JS</h2>
+         </div>
+         <div class="box-content">
+            <p>JS stands for Java Script, it is the browser's programming language</p>
+         </div>
+      </div>
+
+      <!-- inject a Rodium tube -->
+      <div style="clear:left"></div>
+      
+      <br>
+      <button onclick="onMagic()">Magic</button>
+      <button onclick="onHide()">Hide</button>
+      <button onclick="onShow()">Show</button>
+      <button onclick="onAnimate()">Animate</button>
+      <button onclick="onDance()">Show me some moves</button>
+      <br>
+      <img id="myFile" src="images/anubhavtrainings.png">
+    </body>
+</html>

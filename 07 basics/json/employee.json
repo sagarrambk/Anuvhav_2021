@@ -1,0 +1,40 @@
+{
+	"empStr": {
+		"empId": 999,
+		"empName": "Anubhav",
+		"salary": 8900,
+		"currency": "EUR"
+	},
+	"empTable": [
+	 	{
+			"empId": 100,
+			"empName": "Roger",
+			"salary": 950,
+			"currency": "EUR"
+		},
+		{
+			"empId": 200,
+			"empName": "Morris",
+			"salary": 1250,
+			"currency": "EUR"
+		},
+		{
+			"empId": 300,
+			"empName": "Rebbeca",
+			"salary": 650,
+			"currency": "EUR"
+		},
+		{
+			"empId": 400,
+			"empName": "Mathias",
+			"salary": 780,
+			"currency": "EUR"
+		},
+		{
+			"empId": 500,
+			"empName": "Steve",
+			"salary": 9800,
+			"currency": "EUR"
+		}
+	]
+}

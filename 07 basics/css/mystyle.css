@@ -1,0 +1,80 @@
+.box{
+    width: 180px;
+    float:left;
+    margin:4px;
+    }
+    .box-title{
+    color: red;
+    border: 1px solid black;
+    text-align: center;
+    }
+    .box-content{
+    background-color: yellow;
+    color:blue;
+    font-family: cursive;
+    border: 1px solid black;
+    padding: 4px;
+    height: 150px;
+    }
+
+    li{
+        float: left;
+        padding: 10px;
+        border: 1px solid maroon;
+        background-color: white;
+        list-style: none;
+    }
+    a{
+    text-decoration: none;
+    color:yellowgreen;
+    font-weight: bold;
+    }
+    li:hover{
+    background-color: black;
+    color:white;
+    text-transform: uppercase;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        opacity: 0.4;
+    }
+    .img{
+        float: left;
+        padding: 3px;
+    }
+    img:hover{
+        opacity: 1;
+        border:3px solid red;
+        height: 250px;
+        width: 250px;
+    }
+    th, td{
+        border:1px solid black;
+        text-align: center;
+    }
+    th{
+        background-color: brown;
+        color:white;
+    }
+    table{
+        padding: 10px;
+        border-collapse: collapse;
+    }
+    tr:nth-child(even){
+    background-color: white;
+    }
+    tr:nth-child(odd){
+        background-color: aqua;
+    }
+    input:focus{
+        background-color: black;
+        color: white;
+        font-family: cursive;
+        font-size: larger;
+    }
+    #fn:focus{
+        background-color: chartreuse;
+        color: brown;
+        font-weight: bold;
+}
